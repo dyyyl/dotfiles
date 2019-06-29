@@ -45,6 +45,7 @@
   "files.autoSave": "off",
   "files.insertFinalNewline": true,
   "editor.hideCursorInOverviewRuler": true,
+  "editor.lineHeight": 32,
   "files.associations": {
     "*.js": "javascript",
     "*.jsx": "javascriptreact"
