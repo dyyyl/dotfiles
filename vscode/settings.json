@@ -1,0 +1,86 @@
+{
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "Victor Mono",
+  "editor.fontLigatures": true,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          //following will be in italic (=FlottFlott)
+          "comment",
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          "constant", //String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type.class.js" //class keyword
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          //following will be excluded from italics (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "terminal.integrated.fontFamily": "Meslo LG S DZ for Powerline",
+  "terminal.integrated.fontSize": 18,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.rulers": [79],
+  "editor.formatOnSave": true,
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "off",
+  "files.insertFinalNewline": true,
+  "editor.hideCursorInOverviewRuler": true,
+  "files.associations": {
+    "*.js": "javascript",
+    "*.jsx": "javascriptreact"
+  },
+  "prettier.eslintIntegration": true,
+  "prettier.semi": true,
+  "prettier.trailingComma": "all",
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.snippetSuggestions": "top",
+  "editor.formatOnSaveTimeout": 1750,
+  "explorer.confirmDragAndDrop": false,
+  "window.zoomLevel": -1,
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.fontSize": 18,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.rendererType": "dom"
+}
