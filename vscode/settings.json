@@ -40,8 +40,8 @@
   "terminal.integrated.fontSize": 18,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
-  "editor.rulers": [79],
   "editor.formatOnSave": true,
+  "editor.rulers": [79],
   "files.trimTrailingWhitespace": true,
   "files.autoSave": "off",
   "files.insertFinalNewline": true,
@@ -51,9 +51,13 @@
     "*.js": "javascript",
     "*.jsx": "javascriptreact"
   },
-  "prettier.eslintIntegration": true,
-  "prettier.semi": true,
-  "prettier.trailingComma": "all",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.autoFixOnSave": true,
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": true,
   "emmet.syntaxProfiles": {
@@ -86,5 +90,19 @@
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "terminal.integrated.rendererType": "dom"
+  "terminal.integrated.rendererType": "dom",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "webhint.enableTelemetry": "disabled",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "vim.sneak": true
 }
