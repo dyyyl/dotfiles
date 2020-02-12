@@ -52,7 +52,7 @@ module.exports = {
     borderColor: "#333",
 
     // custom CSS to embed in the main window
-    css: "",
+    css: ".xterm-viewport { overflow: hidden !important; }",
 
     // custom CSS to embed in the terminal window
     termCSS: "",
@@ -88,10 +88,10 @@ module.exports = {
       lightBlue: "#839496",
       lightMagenta: "#6c6ec6",
       lightCyan: "#93a1a1",
-      lightWhite: "#fdf6e3",
+      lightWhite: "#fdf6e3"
     },
     MaterialTheme: {
-      theme: "Darker",
+      theme: "Darker"
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
@@ -122,7 +122,7 @@ module.exports = {
     copyOnSelect: false,
 
     // if `true` (without backticks and without quotes), hyper will be set as the default protocol client for SSH
-    defaultSSHApp: true,
+    defaultSSHApp: true
 
     // if `true` (without backticks and without quotes), on right click selected text will be copied or pasted if no
     // selection is present (`true` by default on Windows and disables the context menu feature)
@@ -148,7 +148,7 @@ module.exports = {
     "hypercwd", // change to working directory on new tab
     "hyperterm-tab-icons", // icons for tabs based on usage
     "hyperterm-tabs", // rearrange tabs by drag/drop
-    "hyperterm-cursor", // allows seeing char behind cursor
+    "hyperterm-cursor" // allows seeing char behind cursor
   ],
 
   // in development, you can create a directory under
@@ -159,5 +159,5 @@ module.exports = {
   keymaps: {
     // Example
     // 'window:devtools': 'cmd+alt+o',
-  },
+  }
 };
